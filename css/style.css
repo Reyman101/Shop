@@ -1,0 +1,506 @@
+:root{
+    --color_primary:rgb(93, 23, 47);
+    --backgroud_Color:rgb(23,26,31);
+    --NevBar_Color: rgb(19, 21, 25);
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--backgroud_Color);
+    color: white;
+}
+a{
+    text-decoration: none;
+}
+#p-nevbar{
+    transition: all 0.6s ease-in-out;
+}
+.nevbar-move{
+    z-index: 1;
+    position: fixed;
+    top:0;
+    left: 0;
+    width: 100%;
+}
+.nevbar-logo{
+    width: 70px;
+    height: 70px;
+}
+.navbar-toggler{
+    font-size: 30px;
+    box-shadow: 12px var(--backgroud_Color) !important;
+}
+
+
+
+#navbarSupportedContent{
+    padding-right: 60px;
+}
+.dropdown-menu{
+    background: var(--NevBar_Color);
+
+}
+.dropdown-menu .dropdown-item{
+    color: white;
+}
+.dropdown-menu .dropdown-item:hover{
+    background: rgb(38, 38, 38);
+}
+.dropdown-divider{
+    background: rgb(85, 85, 85);
+}
+
+
+
+
+#h-p-1{
+    transition: all 0.6s ease-in-out;
+    width: 100%;
+    height: 450px;
+    background-image: url("../img/HeroHome.jpg");
+    background-size:cover;
+    background-position: center;
+    box-shadow: 40px 40px 40px rgb(26, 26, 26);
+}
+.footer-box{
+    transition: all 0.6s ease-in-out;
+    height: 200px;
+    position: relative;
+    left: 0px;
+    top:300px;
+    pointer-events: none;
+}
+.footer-tittle{
+    font-size: 40px;
+}
+.footer-subtittle{
+    color: lightgray;
+    font-size: 20px;
+}
+
+
+#h-p-2{
+    margin-top: 100px;
+}
+.product-box{
+    overflow: hidden;
+    text-align:center;
+    margin: 0 auto;
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    transition: all .5s ease-in-out;
+    -webkit-box-shadow: 0px 0px 44px -2px rgb(38, 38, 38);
+    -moz-box-shadow: 0px 0px 44px -2px rgb(38, 38, 38);
+    box-shadow: 0px 0px 44px -2px rgb(38, 38, 38);
+}
+.product-box:hover{
+    border-radius: 13px;
+    transform: translate(-10px, -10px);
+    -webkit-box-shadow: 10px 10px 0px -1px var(--NevBar_Color);
+    -moz-box-shadow: 10px 10px 0px -1px var(--NevBar_Color);
+    box-shadow: 10px 10px 0px -1px var(--NevBar_Color);
+}
+.product-img{
+    width: 280px;
+    height: 230px;
+}
+.product-content{
+    position: relative;
+    top: -100%;
+    z-index: 1;
+    border-radius: 8px;
+    align-items: center;
+    width: 100%;
+    height: 310px;
+    transition: all .7s ease-in-out;
+
+    background: transparent;
+    backdrop-filter: blur(7px);
+    clip-path: circle(0.0% at 0 0);
+}
+.product-box:hover .product-content{
+    transition: 1.10s;
+    border-radius: 13px;
+    clip-path: circle(150% at 0 0);
+}
+.product-line{
+    transform: scale(0);
+    transition: all .5s ease-in-out;
+    position: relative;
+    box-shadow: 0 0 20px #d4234ff1,0 0 50px  #d4234ff1, 0 0 90px  #d4234ff1;
+    background: var(--color_primary);
+}
+.line1{
+    top: 99.3%;
+    left: 0;
+    width: 100%;
+    height: 10px;
+}
+.line2{
+    top: 0;
+    left: 99.3%;
+    width: 10px;
+    height: 100%;
+}
+.product-box:hover .product-line{
+        transform: scale(1);
+}
+
+
+
+
+.inner1{
+    background-image: url("../img/OnetapBackgroundv4.jpg");
+}
+.inner1 .product-content .product-img{
+    margin-top: 10px;
+    width: 260px;
+    height: 240px;
+}
+.inner2{
+    background-image: url("../img/AimwareBackground.png");
+}
+.inner2 .product-content .product-img{
+    margin-top: 40px;
+    width: 200px;
+    height: 170px;
+}
+.inner3{
+    background-image: url("../img/OnetapBackgroundv2.jpg");
+}
+.inner4{
+    background-image: url("../img/GamesenseBackground.jpg");
+}
+.inner4 .product-content .product-img{
+    margin-top: 40px;
+    width: 200px;
+    height: 170px;
+}
+.inner5{
+    background-image: url("../img/OnetapBackgroundv3.jpg");
+}
+.inner5 .product-content .product-img{
+    margin-top: 40px;
+    width: 200px;
+    height: 170px;
+}
+.inner6{
+    background-image: url("../img/OtherBackground.jpg");
+}
+.inner6 .product-content .product-img{
+    margin-top: 30px;
+    width: 230px;
+    height: 200px;
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 550ms ease-in;
+}
+.fade-in.appear {
+    opacity: 1;
+}
+.nav-scrolled {
+    background: var(--NevBar_Color);
+    box-shadow: 0 3px 70px rgba(93, 23, 48, 0.671);
+}
+
+
+
+
+.back-1{
+    background-image: url("../img/FooterOnetapv2.jpg") !important;
+}
+.back-2{
+    background-image: url("../img/FooterAimware.png") !important;
+}
+.back-3{
+    background-image: url("../img/FooterGamesense.png") !important;
+}
+.back-4{
+    background-image: url("../img/FooterOnetapv3.jpg") !important;
+}
+.back-5{
+    background-image: url("../img/FooterOthers.jpg") !important;
+}
+.back-6{
+    background-image: url("../img/FooterOnetapv4.jpg") !important;
+}
+.C-footer-subtittle{
+    color: rgb(165, 164, 164);
+    font-size: 30px;
+}
+.C-Contraido-footer-box{
+    top:190px !important;
+}
+.C-Contraido{
+    height: 390px !important;
+}
+
+
+.articule-box{
+    overflow: hidden;
+    border-radius: 8px;
+    width: 100%;
+    height: 300px;
+    background-size: cover !important;
+    background-position: center !important;
+    transition: all .5s ease-in-out;
+    -webkit-box-shadow: 0px 0px 44px -2px rgb(38, 38, 38);
+    -moz-box-shadow: 0px 0px 44px -2px rgb(38, 38, 38);
+    box-shadow: 0px 0px 44px -2px rgb(38, 38, 38);
+}
+.articule-box:hover{
+    border-radius: 13px;
+    transform: scale(2);
+    transform: translate(-10px, -10px);
+    -webkit-box-shadow: 10px 10px 0px -1px var(--NevBar_Color);
+    -moz-box-shadow: 10px 10px 0px -1px var(--NevBar_Color);
+    box-shadow: 10px 10px 0px -1px var(--NevBar_Color);
+
+}
+.articule-content{
+    overflow: hidden;
+    padding: 30px 0px 0px;
+    text-align:center;
+    margin: 0 auto;
+    transition: all .5s ease-in-out;
+    position: relative;
+    top:100%;
+    left: 0;
+    width: 100%;
+    height: 150px;
+    background: rgb(20, 20, 20);
+}
+.articule-line{
+    z-index: 1;
+    transition: all 0.9s ease-in-out;
+    position: absolute;
+    top: 99.4%;
+    left: 0;
+    width: 100%;
+    height: 20px;
+    background: violet;
+    transform: scaleX(0);
+    box-shadow: 0 0 20px #d4234ff1,0 0 50px  #d4234ff1, 0 0 90px  #d4234ff1;
+    background: var(--color_primary);
+}
+.articule-box:hover .articule-line{
+    transform: scaleX(1);
+}
+.articule-box:hover .articule-content{
+    position: relative;
+    top:53%;
+}
+.articule-title{
+    font-size: 30px;
+}
+.articule-price{
+    font-size: 25px;
+}
+.articule-stock{
+    font-size: 25px;
+}
+#f-p-1{
+    margin-top: 100px;
+    padding: 30px;
+    height: 70px;
+    background: rgb(21, 24, 27)
+}
+#f-p-1 .container h1{
+    font-size: 17px !important;
+}
+
+
+
+
+#b-p-1{
+    margin-top: 25px
+}
+.Buy-body{
+    height: 700px;
+    border-radius: 20px;
+    background: rgb(27, 31, 37);
+}
+
+
+
+
+
+#SB-p--1{
+    margin-top: 20px;
+}
+.form-body1{
+    border-radius: 20px;
+    background: rgb(27, 31, 37);
+}
+.titulo-box{
+    position: relative;
+}
+.tituloContact::before{
+    position: absolute;
+    content: "";
+    height: 4px;
+    width: 15%;
+    box-shadow: 0 0 20px #d4234ff1,0 0 50px  #d4234ff1, 0 0 90px  #d4234ff1;
+    background: var(--color_primary);
+    right: 65%;
+    bottom: 0;
+}
+.input_box{
+    position: relative;
+    height: 40px;
+    width: 100%;
+}
+.input_box input{
+    padding-left: 10px;
+    color: white;
+    background: none;
+    height: 100%;
+    width: 100%;
+    border: none;
+    font-size:15px;
+    border-bottom: 1px solid var(--NevBar_Color);
+    outline:none;
+}
+.input_box input:focus ~ label,
+.input_box input:valid ~ label{
+    transform: translateY(-16px);
+    font-size: 14px;
+    color: rgb(179, 178, 178);
+}
+.input_box label{
+    font-size: 18px;
+    transition: 0.5s;
+    position: absolute;
+    left: 10px;
+    pointer-events: none;
+}
+.underline{
+    position: absolute;
+    bottom: 0px;
+    height: 1px;
+    width: 100%;
+
+}
+.underline::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    transform: scaleX(0);
+    box-shadow: 0 0 20px #d4234ff1,0 0 50px  #d4234ff1, 0 0 90px  #d4234ff1;
+    background: var(--color_primary);
+    transition: 0.70s;
+}
+.input_box input:focus ~ .underline::before{
+    transform: scaleX(1);
+}
+.text-box{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.text-box textarea {
+    color: white;
+    padding: 10px;
+    width: 100%;
+    height: 100%;
+    background: var(--backgroud_Color);
+    border: none;
+    border-bottom: 1px solid var(--NevBar_Color);
+    outline:none;
+    font-size: 16px;
+}
+.text-box label{
+    font-size: 18px;
+    transition: 0.5s;
+    position: absolute;
+    left: 10px;
+    top:8px;
+    pointer-events: none;
+}
+.text-box textarea:focus ~ label,
+.text-box textarea:valid ~ label{
+    transform: translateY(-25px);
+    font-size: 14px;
+    color: rgb(179, 178, 178);
+}
+.underline2{
+    position: absolute;
+    bottom: 6px;
+    height: 1px;
+    width: 100%;
+
+}
+.underline2::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    transform: scaleX(0);
+    box-shadow: 0 0 20px #d4234ff1,0 0 50px  #d4234ff1, 0 0 90px  #d4234ff1;
+    background: var(--color_primary);
+    transition: 0.70s;
+}
+.text-box textarea:focus ~ .underline2::before{
+    transform: scaleX(1);
+}
+.inner10{
+    justify-content: center;
+}
+.inner10 label{
+    font-size: 15px;
+}
+
+
+
+.paypal-box{
+    padding: 20px;
+    justify-content: center;
+    background: var(--backgroud_Color);
+    border-radius: 8px;
+}
+.btn-success{
+    background-color: var(--color_primary) !important;
+    border-color: var(--color_primary) !important;
+    box-shadow: var(--color_primary) !important;
+}
+.btn-success:hover{
+    box-shadow: var(--color_primary) !important;
+    background-color: var(--color_primary) !important;
+    border-color: var(--color_primary) !important;
+}
+.Paypal-titulo{
+    font-size: 18px;
+    position: relative;
+}
+.Paypal-titulo::before{
+    position: absolute;
+    content: "";
+    height: 2px;
+    width: 20%;
+    box-shadow: 0 0 20px #d4234ff1,0 0 50px  #d4234ff1, 0 0 90px  #d4234ff1;
+    background: var(--color_primary);
+    bottom: 0;
+}
+.Paypal-subtitulo{
+font-size: 18px;
+}
+.Paypal-Img{
+    
+    width: 80px;
+    height: 80px;
+}
+
+.paypal-img-box{
+    justify-content: center;
+}
+
+.txtcentrado{
+    text-align: center;
+    margin: auto;
+}
+
+
